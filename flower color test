@@ -1,0 +1,186 @@
+fill(0, 0, 0);
+noStroke();
+rect(181,19,35.8,17.9); // row 2
+rect(163,37,17.9,17.9); // row 3
+rect(217,37,17.9,17.9);
+rect(109,55,53.7,17.9); // row 4
+rect(235,55,17.9,17.9);
+rect(91,72,17.9,17.9); // row 5
+rect(163,72,17.9,17.9);
+rect(217,72,17.9,17.9);
+rect(252,72,35.8,17.9);
+rect(181,90,35.8,17.9); // row 6
+rect(73,90,35.8,17.9);
+rect(288,90,17.9,17.9);
+rect(73,108,17.9,17.9); // row 7
+rect(199,108,17.9,17.9);
+rect(306,108,17.9,17.9);
+rect(55,126,35.8,17.9); // row 8
+rect(306,126,17.9,17.9);
+rect(342,126,35.8,17.9);
+rect(38,144,17.9,17.9); // row 9
+rect(91,144,17.9,17.9);
+rect(181,144,53.7,17.9);
+rect(288,144,53.7,17.9);
+rect(360,144,17.9,17.9);
+rect(20,162,17.9,17.9); // row 10
+rect(109,162,17.9,17.9);
+rect(163,162,17.9,17.9);
+rect(235,162,17.9,17.9);
+rect(270,162,17.9,17.9);
+rect(360,162,17.9,17.9);
+rect(38,180,17.9,17.9); // row 11
+rect(73,180,35.8,17.9);
+rect(163,180,17.9,17.9);
+rect(235,180,17.9,17.9);
+rect(270,180,35.8,17.9);
+rect(342,180,17.9,17.9);
+rect(56,198,35.8,17.9); // row 12
+rect(235,198,17.9,17.9);
+rect(163,198,17.9,17.9);
+rect(306,198,35.8,17.9);
+rect(74,216,17.9,17.9); // row 13
+rect(181,216,53.7,17.9);
+rect(306,216,17.9,17.9);
+rect(74,234,17.9,17.9); // row 14
+rect(306,234,17.9,17.9);
+rect(91,251,17.9,17.9); // row 15
+rect(145,251,17.9,17.9);
+rect(252,251,53.7,17.9);
+rect(74,269,17.9,17.9); // row 16
+rect(234,269,35.8,17.9);
+rect(127,269,35.8,17.9);
+rect(306,269,17.9,17.9);
+rect(74,287,17.9,17.9); // row 17
+rect(145,287,35.8,17.9);
+rect(235,287,17.9,17.9);
+rect(324,287,17.9,17.9);
+rect(56,305,17.9,17.9); // row 18
+rect(127,305,17.9,17.9);
+rect(163,305,71.6,17.9);
+rect(253,305,35.8,17.9);
+rect(324,305,17.9,17.9);
+rect(73,323,53.7,17.9);// row 19
+rect(288,323,35.8,17.9);
+
+mouseClicked = function() {
+fill(169, 227, 43); // green
+ if (mouseX >= 181 && mouseX <= 216.8 && mouseY >= 19.1 && mouseY <= 37 || mouseX >= 163 && mouseX <= 234.6 && mouseY >= 37.1  && mouseY <= 55 || mouseX >= 181 && mouseX <= 216.8 &&  mouseY >= 54.1 && mouseY <= 72) {
+	rect(181,37,35.8,17.9);
+	rect(163,55,71.6,17.9);
+	rect(181,72,35.8,17.9);
+}
+if (mouseX >= 55 && mouseY <= 72.9 && mouseY >= 126.1 && mouseY <= 144 || mouseX >= 37 && mouseX <= 54.9 && mouseY >= 144.1 && mouseY <= 162 || mouseX >= 55 && mouseX <= 72.9 && mouseY >= 162.1 && mouseY <= 180) {
+	rect(55,144,35.8,17.9);
+	rect(37,162,71.6,17.9);
+	rect(55,180,17.9,17.9);
+}
+
+if (mouseX >= 342 && mouseX <= 359.9 && mouseY >= 126.1 && mouseY <= 144 || mouseX >= 188 && mouseX <= 359.6 && mouseY >= 144.1 && mouseY <= 162 || mouseX >= 305 && mouseY <= 340.8 && mouseY >= 162.1 && mouseY <= 180) {
+	rect(342,144,17.9,17.9);
+	rect(288,162,71.6,17.9);
+	rect(305,180,35.8,17.9);
+}
+
+if (mouseX >= 91 && mouseX <= 126.8 && mouseY >= 251.1 && mouseY <= 269 || mouseX >= 91 && mouseX <= 144.7 && mouseY >= 269.1 && mouseY <= 287 || mouseX >= 74 && mouseX <= 127.7 && mouseY >= 287.1 && mouseY <= 305) {
+	rect(91,269,35.8,17.9);
+	rect(91,287,53.7,17.9);
+	rect(74,305,53.7,17.9);
+}
+
+if (mouseX >= 269 && mouseX <= 304.8 && mouseY >= 251.1 && mouseY <= 269 || mouseX >= 252 && mouseX <= 323.6 && mouseY >= 269.1 && mouseY <= 287 || mouseX >= 288 && mouseX <= 323.8 && mouseY >= 287.1 && mouseY <= 305) {
+	rect(269,269,35.8,17.9);
+	rect(252,287,71.6,17.9);
+	rect(288,305,35.8,17.9);
+}
+
+//pink:
+fill(240, 104, 208);
+if (mouseX >= 109 && mouseX <= 162.7  && mouseY >= 55.1 && mouseY <= 73 || mouseX >= 235 && mouseX <=  252.9 && mouseY >= 55.1 && mouseY <= 73 || mouseX >= 109 && mouseX <= 215.5 && mouseY >= 72.1 && mouseY <= 90 || mouseX >= 217 && mouseX <= 288.6 && mouseY >= 72.1 && mouseY <= 90 || mouseX >= 91 && mouseX <= 126.8 && mouseY >= 90.1 && mouseY <= 108 || mouseX >= 144 && mouseX <= 197.7 && mouseY >= 90.1 && mouseY <= 108 || mouseX >= 2107 && mouseX <= 306.5 && mouseY >= 90.1 && mouseY <= 108 || mouseX >= 91 && mouseX <= 144.7 && mouseY >= 108.1 && mouseY <= 126 || mouseX >= 162 && mouseX <= 269.4 && mouseY >= 108.1 && mouseY <= 126 || mouseX >= 289 && mouseX <= 306.9 && mouseY >= 108.1 && mouseY <= 126 || mouseX >= 109 && mouseX <= 162.7 && mouseY >= 126.1 && mouseY <= 144 || mouseX >= 235 && mouseX <= 252.9 && mouseX >= 125.1 && mouseY <= 143 || mouseX >= 269 && mouseX <= 286.9 && mouseY >= 125.1 && mouseY <= 143 || mouseX >= 127 && mouseX <= 162.8 && mouseY >= 144.1 && mouseY <= 162 || mouseX >= 253 && mouseX <= 270.9 && mouseY >= 144.1 && mouseY <= 162 || mouseX >= 253 && mouseX <= 270.9 && mouseY >=162.1 && mouseY <= 180 || mouseX >= 109 && mouseX <= 162.7 && mouseY >= 162.1 && mouseY <= 180 || mouseX >= 91 && mouseX <= 144.7 && mouseY >= 180.1 && mouseY <= 198 || mouseX >= 253 && mouseX <= 306.7 && mouseY >= 180.1 && mouseY <= 198 || mouseX >= 91 && mouseX <= 126.8 && mouseY >= 198.1 && mouseY <= 216 || mouseX >= 144 && mouseX <= 179.8 && mouseY >= 198.1 && mouseY <= 216 || mouseX >= 289 && mouseX <= 306.9 && mouseY >= 198.1 && mouseY <= 216 || mouseX >= 91 && mouseX <= 198.4 && mouseY >= 216.1 && mouseY <= 234 || mouseX >= 217 && mouseY <= 306.5 && mouseY >= 216.1 && mouseY <= 234 || mouseX >= 109 && mouseX <= 144.8 && mouseY >= 234.1 && mouseY <= 252 || mouseX >= 163 && mouseX <= 198.8 && mouseY >= 234.1 && mouseY <= 252 || mouseX >= 216 && mouseX >= 234.1 && mouseY <= 252 || mouseX >= 163 && mouseX <= 198.8 && mouseY >= 251.1 && mouseY <= 269 || mouseX >= 216 && mouseX <= 233.9 && mouseY >= 251.1 && mouseY <= 269 || mouseX >= 180 && mouseX <= 233.7 && mouseY >= 2691 && mouseY <= 287) {
+rect(109,73,53.7,17.9);
+rect(235,73,17.9,17.9);
+rect(109,90,71.6,17.9);
+rect(217,90,71.6,17.9);
+rect(91,108,35.8,17.9);
+rect(144,108,53.7,17.9);
+rect(217,108,89.5,17.9);
+rect(91,126,53.7,17.9);
+rect(162,126,107.4,17.9);
+rect(289,126,17.9,17.9);
+rect(109,144,53.7,17.9);
+rect(235,143,17.9,17.9);
+rect(270,144,17.9,17.9);
+rect(127,162,35.8,17.9);
+rect(253,162,17.9,17.9);
+rect(253,180,17.9,17.9);
+rect(109,180,53.7,17.9);
+rect(91,198,53.7,17.9);
+rect(253,198,53.7,17.9);
+rect(91,216,35.8,17.9);
+rect(144,216,35.8,17.9); 
+rect(289,216,17.9,17.9);
+rect(91,234,107.4,17.9);
+rect(217,234,89.5,17.9);
+rect(109,252,35.8,17.9); 
+rect(163,252,35.8,17.9);
+rect(216,252,35.8,17.9);
+rect(163,269,35.8,17.9);
+rect(216,269,17.9,17.9);
+rect(180,287,53.7,17.9);
+}
+
+//maroon;
+
+fill(168, 32, 150);
+if (mouseX >= 127 && mouseX <= 144.9 && mouseY >= 107 && mouseY <= 124.9) {
+	rect(127,107,16.9,17.9);
+}
+if (mouseX >= 145 && mouseX <= 162.9 && mouseY >= 126 && mouseY <= 143.9) {
+	rect(145,126,17.9,17.9);
+} if (mouseX >= 270 && mouseX <= 287.9 && mouseY >= 126 && mouseY <= 143.9) {
+	rect(270,126,17.9,17.9);
+}
+if (mouseX >= 163 && mouseX <= 180.9 && mouseY >= 144 && mouseY <= 161.9) {
+	rect(163,144,17.9,17.9);
+}
+if (mouseX >= 252 && mouseX <= 269.9 && mouseY >= 144 && mouseY <= 161.9) {
+	rect(252,144,17.9,17.9);
+}
+if (mouseX >= 145 && mouseX <= 162.9 && mouseY >= 198 && mouseY <= 215.9) {
+	rect(145,198,17.9,17.9);
+}
+if (mouseX >= 127 && mouseX <= 144.9 && mouseY >= 216 && mouseY <= 233.9) {
+	rect(127,216,17.9,17.9);
+}
+if (mouseX >= 235 && mouseX <= 288.7 && mouseY >= 216 && mouseY <= 233.9) {
+	rect(235,216,53.7,17.9);
+}
+if (mouseX >= 199 && mouseX <= 216.9 && mouseY >= 2 && mouseY <= 251.9) {
+	rect(199,234,17.9,17.9);
+}
+if (mouseX >= 199 && mouseX <= 216.9 && mouseY >= 252 && mouseY <= 269.9) {
+	rect(199,252,17.9,17.9); 
+}
+if (mouseX >= 199 && mouseX <= 216.9 && mouseY >=269 && mouseY <= 2286.9) {
+	rect(199,269,17.9,17.9);
+}
+
+// orange  
+fill(245, 161, 52);
+if (mouseX >= 181 && mouseX <= 198.9 && mouseY >= 162 && mouseX <= 279.9 || mouseX >= 217 && mouseX <= 234.9 && mouseY >= 162 && mouseY <= 179.9 || mouseX >= 199 && mouseX <= 216.9 && mouseY >= 180 && mouseY <=197.9 || mouseX >= 181 && mouseX <= 198.9 && mouseY >= 198 && mouseY <= 215.9 || mouseX >= 217 && mouseX <= 234.9 && mouseY >= 198 && mouseY <= 215.9) {
+	rect(181,162,17.9,17.9);
+	rect(217,162,17.9,17.9);
+	rect(199,180,17.9,17.9);
+	rect(181,198,17.9,17.9); 
+	rect(217,198,17.9,17.9);
+}
+
+// yellow 
+fill(251, 255, 0);
+if (mouseX >= 199 && mouseX <= 216.9 && mouseY >= 162 && mouseY <= 179.9 || mouseX >= 181 && mouseX <= 198.9 && mouseY >= 180 && mouseY <= 197.9 || mouseX >= 217 && mouseX <= 234.9 && mouseY >= 180 && mouseY <= 197.9 || mouseX >= 199 && mouseX <= 216.9 && mouseY >= 198 && mouseY <= 215.9) {
+	rect(199,162,17.9,17.9);
+	rect(181,180,17.9,17.9);
+	rect(217,180,17.9,17.9);
+	rect(199,198,17.9,17.9); 
+} 
+};
