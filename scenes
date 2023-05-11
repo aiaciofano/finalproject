@@ -1,0 +1,26 @@
+/ Creating the splash screen with the title, instructions, and start button
+var splashScreen = function() {
+    background(230, 172, 221); // bkg color
+    drawBitmoji(198,136,44); // draw my bitmoji
+    fill(0, 0, 0);
+    textSize(34);
+    text("Paint by Number!",195,45); // title text
+    textSize(20);
+    text("By Allie Iaciofano",202,76);
+    text("Instructions:",200,253); // instructions text
+    textSize(15);
+    text("Click on the color with the number that corresponds",198,275);
+    text("with the area on the picture that you want to color.",198,297);
+    text("Then, click on the area of the picture to fill it in.",193,319);
+    startButton.draw(); // drawing the start button
+};
+
+// creating selectionScreen, which allows the player to select one of two images to color in (either cat or flower)
+var selectionScreen = function() {
+    background(182, 234, 250);
+    fill(0, 0, 0);
+    textSize(20);
+    text("Select an image to paint:",193,35);
+    catButton.draw();
+    flowerButton.draw();
+}; 
