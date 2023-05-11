@@ -1,0 +1,60 @@
+// copying in the Khan Academy button class
+var Button = function(config) {
+    this.x = config.x || 0;
+    this.y = config.y || 0;
+    this.width = config.width || 150;
+    this.height = config.height || 50;
+    this.label = config.label || "Click";
+    this.onClick = config.onClick || function() {};
+};
+
+Button.prototype.draw = function() {
+    fill(189, 237, 168);
+    rect(this.x, this.y, this.width, this.height, 5);
+    fill(0, 0, 0);
+    textSize(15);
+    textAlign(CENTER,BASELINE);
+    text(this.label, this.x+72, this.y+29);
+};
+
+Button.prototype.isMouseInside = function() {
+    return mouseX > this.x &&
+           mouseX < (this.x + this.width) &&
+           mouseY > this.y &&
+           mouseY < (this.y + this.height);
+};
+
+Button.prototype.handleMouseClick = function() {
+    if (this.isMouseInside()) {
+        this.onClick();
+    }
+};
+
+var startButton = new Button({   // creates the start button on start screen
+    x:128,
+    y: 337,
+    label: "Let's Paint!",
+    onClick: function() {
+          currentScene = 1;
+        }
+});
+
+// creates "cat" button on the selection screen to pick the cat picture
+var catButton = new Button({
+    x:119,
+    y:102,
+    label: "Cat",
+    onClick: function() {
+        currentScene = 2;
+    }
+});
+
+//creates "flower" button on selection screen to pick the flower picture
+var flowerButton = new Button({ 
+    x:119,
+    y:200,
+    label: "Flower",
+    onClick: function() {
+        currentScene = 3;
+    }
+});
